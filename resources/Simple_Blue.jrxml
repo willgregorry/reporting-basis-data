@@ -1,0 +1,91 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Simple_Blue" language="java" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="87f7c4a5-b86e-4b34-ae16-0fdd6368dc9d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="aW5zdHJ1Y3RvciBBUyAsMTg4LDIxOSwwY2FkMWMyNS1mMjQ2LTRmNjgtYTFmNi1iMzY5ZTgwYjBh&#xa;MzQ7"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="University"/>
+	<query language="SQL"><![CDATA[SELECT "ID",
+	name,
+	dept_name,
+	salary
+FROM instructor]]></query>
+	<field name="ID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ID"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+	</field>
+	<field name="dept_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dept_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="dept_name"/>
+	</field>
+	<field name="salary" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="salary"/>
+		<property name="com.jaspersoft.studio.field.label" value="salary"/>
+	</field>
+	<background/>
+	<title height="72">
+		<element kind="frame" uuid="432dc30b-6144-43ef-8ae9-2ceb3f43f9f6" mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699">
+			<element kind="staticText" uuid="7b912007-dfd8-417e-a1c1-b5d45d8c7caf" x="20" y="20" width="234" height="43" forecolor="#FFFFFF" fontSize="34.0" bold="true">
+				<text><![CDATA[TITLE]]></text>
+			</element>
+			<element kind="staticText" uuid="70b1f991-b73c-4728-b01a-c316504afde2" x="395" y="43" width="180" height="20" forecolor="#FFFFFF" fontSize="14.0" bold="false" hTextAlign="Right">
+				<text><![CDATA[Add a description here]]></text>
+			</element>
+		</element>
+	</title>
+	<pageHeader height="13"/>
+	<columnHeader height="21">
+		<element kind="line" uuid="7f67a627-92b5-4a11-929b-33bb8045d94f" x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+		<element kind="staticText" uuid="01919379-b1ce-4456-80dd-2763754bf363" mode="Opaque" x="0" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ca1d97b-9103-4847-814c-c288fbe8da20"/>
+		</element>
+		<element kind="staticText" uuid="4ec29422-210b-4931-abb1-6fb892949bda" mode="Opaque" x="138" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[name]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e22dc7fc-a35e-4a2b-9765-e586f4e3999c"/>
+		</element>
+		<element kind="staticText" uuid="43b8eca7-8362-47f3-b48a-322f8be531f8" mode="Opaque" x="276" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[dept_name]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="67d9a50b-4e43-416b-9b7b-9a7b9574a05b"/>
+		</element>
+		<element kind="staticText" uuid="144c889b-bf33-43d0-8a1b-f338f9a5827e" mode="Opaque" x="414" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[salary]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c8644b21-fbe6-4878-9aa1-b1cf099ef662"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<element kind="line" uuid="8464051e-2ebb-4ab7-81fe-7277ee03750c" positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+			<element kind="textField" uuid="0f3e137f-fd94-40e1-89fb-e0f5ab8f0c4c" x="0" y="0" width="138" height="20" fontSize="14.0" textAdjust="StretchHeight">
+				<expression><![CDATA[$F{ID}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ca1d97b-9103-4847-814c-c288fbe8da20"/>
+			</element>
+			<element kind="textField" uuid="0adfbc9a-c4c6-4942-aca7-7cf57a13934a" x="138" y="0" width="138" height="20" fontSize="14.0" textAdjust="StretchHeight">
+				<expression><![CDATA[$F{name}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e22dc7fc-a35e-4a2b-9765-e586f4e3999c"/>
+			</element>
+			<element kind="textField" uuid="2b3561fa-c3b5-4f28-a8bf-2bd84cf7a5fc" x="276" y="0" width="138" height="20" fontSize="14.0" textAdjust="StretchHeight">
+				<expression><![CDATA[$F{dept_name}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="67d9a50b-4e43-416b-9b7b-9a7b9574a05b"/>
+			</element>
+			<element kind="textField" uuid="7b854c31-3593-4166-ab57-f0fa041271fd" x="414" y="0" width="138" height="20" fontSize="14.0" textAdjust="StretchHeight">
+				<expression><![CDATA[$F{salary}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c8644b21-fbe6-4878-9aa1-b1cf099ef662"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter/>
+	<pageFooter height="17">
+		<element kind="textField" uuid="3d381056-e6fd-4345-a351-d09436539df5" mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" hTextAlign="Right">
+			<expression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></expression>
+		</element>
+		<element kind="textField" uuid="cd5564d0-76d4-4710-8e53-86ee6e05640c" mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" evaluationTime="Report">
+			<expression><![CDATA[" " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<element kind="textField" uuid="1c200cf8-e5cc-4784-89a1-530e3805b225" x="0" y="4" width="100" height="13" pattern="EEEEE dd MMMMM yyyy">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</pageFooter>
+	<summary/>
+</jasperReport>
